@@ -7,3 +7,20 @@ This version of the driver code has a few drawbacks, namely that it has the Ardu
 This is simply a permanent place to store the files, the updated driver will be present in the next releast of Mathematica.
 
 There is also a notebook file that I used at the Summer School for demoing the driver included here.
+
+
+USAGE:
+
+You can load the package after downloading it and ensuring that the file is in a directory present in $Path.
+
+Load it with:
+
+Needs["ArduinoDriver`"]
+
+You can then open a connection to the Arduino with 
+
+DeviceOpen["Arduino","COM4"]
+
+Replace "COM4" with an appropriate serial port on your machine.
+
+See demo.nb for more examples.
